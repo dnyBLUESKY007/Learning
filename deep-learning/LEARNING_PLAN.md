@@ -232,7 +232,18 @@ A systematic path from zero to cutting-edge LLM engineering. Each phase builds o
 
 ## Suggested Learning Order
 
-For a complete beginner going deep on LLMs, recommended sequence:
+### With a CS Bachelor's Degree (current path)
+
+Skip or skim Phase 1 — linear algebra, calculus, and probability are assumed. Only revisit SVD and chain rule notation if they feel fuzzy. Start directly with Karpathy's *Neural Networks: Zero to Hero* series, which covers Phases 2–3 better than any textbook:
+
+1. **Phase 2 via Karpathy** (1-2 weeks): Watch Zero to Hero in order — `micrograd` builds autograd from scratch, `makemore` series builds up intuition for sequence modeling
+2. **Phase 3 via Karpathy + nanoGPT** (1-2 weeks): Watch *Let's build GPT from scratch*, then read the `nanoGPT` repo line by line (~300 lines, extremely readable). Read *Attention Is All You Need* paper alongside.
+3. **Phase 5 partial** (1 week): KV-cache + basic inference while transformer knowledge is fresh
+4. **Phase 4** (3-4 weeks): Training at scale — LoRA, distributed training
+5. **Phase 5** (2-3 weeks): Full inference optimization
+6. **Phase 6** (ongoing): Current tech — RAG, agents, tool use
+
+### From Scratch (no ML background)
 
 1. **Phase 1** (2-3 weeks): Math foundations — don't skip, especially backprop math
 2. **Phase 2** (3-4 weeks): DL + PyTorch — build micrograd, train on MNIST
